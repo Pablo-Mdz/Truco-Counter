@@ -2,26 +2,28 @@
 let point1 = document.getElementById("sum-1")
 let point2 = document.getElementById("sum-2")
 
-let num = 0 
+let num1 = 0 
 function increment1() {
-    num += 1
-    point1.textContent = num
+    num1 += 1
+    point1.textContent = num1
 }
+
+let num2 = 0
 function increment2() {
-    num += 1
-    point2.textContent = num
+    num2 += 1
+    point2.textContent = num2
 }
 
 let correctionTeam1 = document.getElementById("sum-1")
 let correctionTeam2 = document.getElementById("sum-2")
 
 function delete1() {
-    num -= 1
-    correctionTeam1.textContent = num
+    num1 -= 1
+    correctionTeam1.textContent = num1
 }
 function delete2() {
-    num -= 1
-    correctionTeam2.textContent = num
+    num2 -= 1
+    correctionTeam2.textContent = num2
 }
 
 

@@ -7,9 +7,8 @@ body {
 }
 
 .container {
-
-    width: 620px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
     display: flex;
     justify-content: space-around;
     background-image: url("styles/truco.jpeg");
@@ -75,5 +74,4 @@ span {
 #btn-reset {
     margin-top: 20px;
     background-color: rgb(243, 214, 46);
-    
 }

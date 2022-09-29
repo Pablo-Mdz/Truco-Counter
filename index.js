@@ -1,59 +1,112 @@
 
 // increment Button
-let point1 = document.getElementById("sum-1")
+let sumOne = document.getElementById("sum-1")
+let sumTwo = document.getElementById("sum-2")
+
 let num1 = 0
+let num2 = 0
+
+
+// increment button
 function increment1() {
     num1 += 1
-    point1.textContent = num1
+    sumOne.textContent = num1;
+    buenasMalas(num1)
 }
 
 let point2 = document.getElementById("sum-2")
-let num2 = 0
 function increment2() {
     num2 += 1
-    point2.textContent = num2
+    sumTwo.textContent = num2;
+    buenasMalas2(num2)
 }
 // delete button
-let correctionTeam1 = document.getElementById("sum-1")
+
 function delete1() {
     num1 -= 1
-    correctionTeam1.textContent = num1
+    sumOne.textContent = num1;
+    buenasMalas(num1)
 }
 
-let correctionTeam2 = document.getElementById("sum-2")
+
 function delete2() {
     num2 -= 1
-    correctionTeam2.textContent = num2
+    sumTwo.textContent = num2;
+    buenasMalas2(num2)
 }
 
 // reset Button
-let reset1Config1 = document.getElementById("sum-1")
 function reset1() {
     num1 = 0
-    reset1Config1.textContent = num1
-}
-let reset1Config2 = document.getElementById("sum-2")
-function reset2() {
-    num2 = 0
-    reset1Config2.textContent = num2
+    sumOne.textContent = num1;
+    buenasMalas(num1)
 }
 
+function reset2() {
+    num2 = 0
+    sumTwo.textContent = num2;
+    buenasMalas2(num2)
+}
 
 
 
 // buenas o Malas team 1 condicionales
 let marcador = document.getElementById("buenasOMalas1");
 
-if ("sum-1" === 0) {
-    marcador.textContent = "--";
+function buenasMalas(result) {
+
+    if (result === 0) {
+        marcador.textContent = "--";
+    }
+    else if ((result > 0) && (result <= 15)) {
+        marcador.textContent = "Malas";
+    }
+    else if ((result > 15) && (result < 30)) {
+        marcador.textContent = "Buenas";
+    }
+    else if (result >= 30) {
+        marcador.textContent = "Ganaste!!!";
+    }
+    // else if (result < 0) {
+    //     marcador.textContent = "Error";
+    // }
+    else {
+        marcador.textContent = "Error";
+    }
 }
-else if (("sum-1" >= 1) || ("sum-1" <= 15)) {
-    marcador.textContent = "Buenas";
-}
-else if ("sum-1" > 0) {
-    marcador.textContent = "Error";
-}
-else {
-    marcador.textContent = "Test";
+// buenas o Malas team 1 condicionales
+let marcador2 = document.getElementById("buenasOMalas2");
+
+function buenasMalas2(result) {
+
+    if (result === 0) {
+        marcador2.textContent = "--";
+    }
+    else if ((result > 0) && (result <= 15)) {
+        marcador2.textContent = "Malas";
+    }
+    else if ((result > 15) && (result < 30)) {
+        marcador2.textContent = "Buenas";
+    }
+    else if (result >= 30) {
+        marcador2.textContent = "Ganaste!!!";
+    }
+    // else if (result < 0) {
+    //     marcador2.textContent = "Error";
+    // }
+    else {
+        marcador2.textContent = "Error";
+    }
 }
 
+
+
+
+// test 
+
+// let test = document.getElementById("buenasOMalas1");
+// let test = "sum-1"
+// test.textContent = "test1";
+
+console.log(sumOne)
+console.log(marcador)

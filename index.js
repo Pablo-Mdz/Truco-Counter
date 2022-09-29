@@ -1,3 +1,4 @@
+
 // increment Button
 let point1 = document.getElementById("sum-1")
 let num1 = 0
@@ -24,7 +25,7 @@ function delete2() {
     num2 -= 1
     correctionTeam2.textContent = num2
 }
- 
+
 // reset Button
 let reset1Config1 = document.getElementById("sum-1")
 function reset1() {
@@ -39,4 +40,20 @@ function reset2() {
 
 
 
+
+// buenas o Malas team 1 condicionales
+let marcador = document.getElementById("buenasOMalas1");
+
+if ("sum-1" === 0) {
+    marcador.textContent = "--";
+}
+else if (("sum-1" >= 1) || ("sum-1" <= 15)) {
+    marcador.textContent = "Buenas";
+}
+else if ("sum-1" > 0) {
+    marcador.textContent = "Error";
+}
+else {
+    marcador.textContent = "Test";
+}
 

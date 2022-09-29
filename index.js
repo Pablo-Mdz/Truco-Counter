@@ -74,7 +74,7 @@ function buenasMalas(result) {
         marcador.textContent = "Error";
     }
 }
-// buenas o Malas team 1 condicionales
+// buenas o Malas team 2 condicionales
 let marcador2 = document.getElementById("buenasOMalas2");
 
 function buenasMalas2(result) {

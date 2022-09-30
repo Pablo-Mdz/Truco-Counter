@@ -98,15 +98,3 @@ function buenasMalas2(result) {
         marcador2.textContent = "Error";
     }
 }
-
-
-
-
-// test 
-
-// let test = document.getElementById("buenasOMalas1");
-// let test = "sum-1"
-// test.textContent = "test1";
-
-console.log(sumOne)
-console.log(marcador)

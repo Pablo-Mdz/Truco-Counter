@@ -1,5 +1,5 @@
 
-// increment Button
+
 let sumOne = document.getElementById("sum-1")
 let sumTwo = document.getElementById("sum-2")
 
@@ -47,10 +47,22 @@ function reset2() {
     sumTwo.textContent = num2;
     buenasMalas2(num2)
 }
+// option 2 funtion clean Code
+
+// function updateResult1(value) {
+//     num1 = num1 + value;
+//     sumOne.textContent = num1;
+//     buenasMalas(num1);
+// }
+// function updateResult2(value) {
+//     num2 = num2 + value;
+//     sumTwo.textContent = num2;
+//     buenasMalas(num2);
+// }
 
 
 
-// buenas o Malas team 1 condicionales
+// buenas o Malas team 1 conditionals
 let marcador = document.getElementById("buenasOMalas1");
 
 function buenasMalas(result) {
@@ -74,7 +86,7 @@ function buenasMalas(result) {
         marcador.textContent = "Error";
     }
 }
-// buenas o Malas team 2 condicionales
+// buenas o Malas team 2 conditionals
 let marcador2 = document.getElementById("buenasOMalas2");
 
 function buenasMalas2(result) {

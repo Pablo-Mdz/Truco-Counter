@@ -83,7 +83,7 @@ function buenasMalas(result) {
     //     marcador.textContent = "Error";
     // }
     else {
-        marcador.textContent = "Error";
+        marcador.textContent = "Aprende a contar...";
     }
 }
 // buenas o Malas team 2 conditionals
@@ -107,6 +107,6 @@ function buenasMalas2(result) {
     //     marcador2.textContent = "Error";
     // }
     else {
-        marcador2.textContent = "Error";
+        marcador2.textContent = "Aprende a contar...";
     }
 }

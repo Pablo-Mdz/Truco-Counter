@@ -12,6 +12,7 @@ function increment1() {
     num1 += 1
     sumOne.textContent = num1;
     buenasMalas(num1)
+    
 }
 
 let point2 = document.getElementById("sum-2")
